@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+.wrapper{
+    width: 100%;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background: url(images/dark_tint.png), url(images/bokeh_car_lights_bg.jpg);
+    background-size: cover;
+    position: relative;
+    box-sizing: flex;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    align-self: flex-start;
+}
+header h1{
+    position: absolute;
+    font-size: 1.5em;       
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: white;
+    font-weight: 100;
+    float: left;
+}
+header nav.menu ul{
+    position: absolute;
+    float: right;
+    right: 20px;
+    top: 30px;
+}
+header nav.menu ul li{
+    display: block;
+    padding: 5px;
+    float: left;
+}
+header nav.menu ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #d6d8d8;
+    font-weight: 100;  
+    padding: 10px 25px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    transition: .2s;
+}
+header nav.menu ul li a:hover{
+    color: white;
+    transition: ease-in-out;
+    background-color:  rgba(0, 0, 0, 0.450);
+}
+H2.subtitle{
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.banner .text p{
+    font-size: 1.5em;
+    color: white;
+    line-height: 1.5em;
+    margin-bottom: 50px;
+}
+.text ul li a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+    padding: 15px 40px;
+    background: #3cadd4;
+    border-radius: 20px;
+    transition: .6s;
+}
+.text ul li a:hover{
+    background: white;
+    color: #3cadd4;
+    font-weight: bold;
+}
+section.section01{
+    width: 100%;
+    background: #f5f5f5;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+.section01 h2{
+    color: #474747;
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 1em;
+    margin-bottom: 0.5em;
+}
+.section01 h2 + p{
+    color: #858585;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section01 .box{
+    flex-basis: 300px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    background: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-right: 20px;
+    align-items: flex-start;
+}
+.section01 .box:nth-last-child(1){
+    margin-right: 0;
+}
+.section01 .box i{
+    font-size: 2em;
+    border-radius: 50%;
+    padding: 40px ;
+    color: white;
+}
+.section01 .box i.first{
+    background: #3cadd4;
+}
+.section01 .box i.second{
+    background: #add43c;
+}
+.section01 .box i.third{
+    background: #d43c81;
+}
+.section01 .box h3{
+    margin: 20px 0;
+    color: #858585;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.section01 .box p{
+    color: #858585;
+    font-size: 1.3em;
+    font-weight: 100;
+    padding: 0 30px 20px 30px;
+    line-height: 1.5em;
+}
+section.section02{
+    width: 100%;
+    background: white;
+    border-top: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 80px;
+    display: block;
+}
+.section02 h2{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #474747;
+    font-weight: 900;
+}
+.section02 h2+p{
+    font-size: 1.3em;
+    margin-bottom: 80px;
+    color: #858585;
+}
+.section02 .account_list{
+    width: 100%;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section02 .account{
+    flex-basis: 230px;
+    margin: 50px 10px;
+    text-align: left;
+    flex-grow: 1;
+}
+.section02 .account img{
+    float: left;
+    width: 100px;
+    border-radius: 50%;
+    margin: 5px 10px;
+}
+.section02 .account h4{
+    margin-top: 20px;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+.section02 .account p{
+    font-size:0.9em;
+    margin-top: 5px;
+}
+.section02 article{
+    margin: 50px auto;
+    width: 70%;
+}
+.section02 article p{
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #444;
+}
+.section02 article ul li a{
+    background: #3cadd4;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 15px 40px;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    transition: .6s;
+}
+.section02 article ul li a:hover{
+    background: #5dcff5;
+    color: #fff;
+}
+
+.section03{
+    width: 100%;
+    display: block;
+    background: #3cadd4;
+    padding: 70px 0 10px 0;
+    text-align: center;
+}
+.section03 h2{
+    font-size: 3em;
+    color: white;
+    margin-bottom: 20px;
+}
+.section03 h2+p{
+    font-size: 1.4em;
+    color: white;
+    letter-spacing: 2px;
+}
+.section03 .container .form{
+    width: 600px;
+    margin: 70px auto;   
+}
+.section03 .container .form input[type=text]{
+    width: 180px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px 18px;
+    color: #444;
+    font-size: 1em;
+    border: 0;
+}
+.section03 .container .form input[type=email]{
+    width: 180px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px 18px;
+    color: #444;
+    font-size: 1em;
+    border: 0;
+}
+.section03 .container .form input[type=text]::placeholder {
+    color: #444;
+    opacity: 20%;
+
+}
+.section03 .container .form input[type=email]::placeholder {
+    color: #444;
+    opacity: 20%;
+
+}
+.section03 .container .form textarea{
+    width: 400px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 3px 18px;
+    color: #444;
+    font-size: 1em;
+    border: none;
+}
+.section03 .container .form textarea::placeholder{
+    color: #444;
+    opacity: 20%;
+}
+
+.section03 .container .form input[type=submit]{
+    background: #444;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 15px 40px;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    transition: .6s;
+    border: none;
+}
+.section03 .container .form input[type=submit]:hover{
+    background: rgb(44, 44, 44);
+    color: #fff;
+}
+footer{
+    width: 100%;
+    background: #383b43;
+    padding: 30px 0;
+}
+footer .container{
+    margin-top: 50px;
+    border-bottom: 1px solid #979797;
+}
+footer .footer_box{
+    justify-content: space-between;
+    width: 200px;
+}
+footer h3{
+    color: white;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+footer .container ul{
+    display: block;
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+footer .container ul a{
+    color: #cdced0;
+    text-decoration: none;
+    font-size: 0.9em;
+    line-height: 2.5em;
+}
+footer .container ul a:hover{
+    text-decoration: underline;
+}
+.social{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+footer .licence{
+    width: 100%;
+    margin: 20px auto;
+}
+
+footer .licence p{
+    color: #858585;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+footer .social .icons{
+    float: right;
+    margin-top: 0;
+    position: relative;
+}
+
+footer .social .icons i{
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+}
+.clear {clear: both;}
+
+footer .social .icons i.f_icon{
+    background: #3b5998;
+}
+footer i.t_icon{
+    background:#1DA1F2;
+}
+footer i.l_icon{
+    background: #0072b1;
+}
+
+@media screen and (max-width:980px){
+    .banner{
+        height: 68vh;
+    }
+    h2.subtitle{
+        font-size: 2em;
+    }
+    .banner .text p{
+        font-size: 1em;
+    }
+    div.text ul li a{
+        font-size: 0.8em;
+        padding: 10px 25px;
+        border-radius: 15px;
+    }
+    .section01 .box{
+        flex-basis: 100%;
+    }
+    .section02 .account{
+        flex-basis: 40%;
+    }
+    footer .footer_box{
+        flex-basis: 40%;
+        margin: 10px 20px;
+
+    }
+}
+
+@media screen and (max-width:600px){
+    .section02 .account{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .section02 .account img{
+        text-align: center;
+        float: none;
+    }
+    footer .footer_box{
+        flex-basis: 100%;
+        margin: 10px 20px;
+        text-align: center;
+    }
+    footer .licence{
+        text-align: center;
+    }
+    
+    footer .social .icons{
+        clear: both;
+        float: none;
+    }
+    footer .licence p{
+        float: none;
+        margin: 20px auto;
+    }
+    footer .social .icons i{
+        margin-top: 20px;
+    }
+    .section03 .container .form{
+        width: 100%;
+        margin: 70px auto;
+    }
+    .section03 .container .form input[type=text]{
+        width: 80%;
+        margin-bottom: 5px;
+    }
+    .section03 .container .form input[type=email]{
+        width: 80%;
+        margin-bottom: 5px;
+    }
+    .section03 .container .form textarea{
+        width: 80%;
+        height: 150px;
+    }
+
+}
