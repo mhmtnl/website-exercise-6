@@ -3,7 +3,7 @@
 ## Learning Goals
 
 - Transform a website depending on components
-- Composing own website depending on similar sites
+- Composing own website by considering similar sites
 
 ## Introduction
 
